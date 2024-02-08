@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="565.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/11"
+            fx:controller="com.zhuhaievych.coursework.controllers.SetCalorityRangeMenuController">
+    <AnchorPane prefHeight="100.0" prefWidth="645.0" style="-fx-background-color: #333333;">
+        <Label layoutX="209.0" layoutY="25.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0"
+               text="Set calority range:" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="30.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <Label fx:id="LabelTitle" alignment="CENTER" layoutX="142.0" layoutY="190.0" maxHeight="-Infinity"
+           maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+           text="Ingredients with calority from min to max:">
+        <font>
+            <Font name="System Bold" size="18.0"/>
+        </font>
+    </Label>
+    <TableView fx:id="IngredientsTable" layoutX="15.0" layoutY="235.0" prefHeight="260.0" prefWidth="616.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" minWidth="-Infinity" prefWidth="150.0" text="Name"/>
+            <TableColumn fx:id="calorityColumn" minWidth="-Infinity" prefWidth="110.0" text="Calority"/>
+            <TableColumn fx:id="priceColumn" minWidth="-Infinity" prefWidth="86.0" text="Price"/>
+            <TableColumn fx:id="expTermColumn" minWidth="-Infinity" prefWidth="150.0" text="Expiration term (in days)"/>
+            <TableColumn fx:id="weightColumn" prefWidth="120.0" text="Weight(in grams)"/>
+        </columns>
+    </TableView>
+    <Label layoutX="15.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="30.0" prefWidth="110.0" text="Min calority:">
+        <font>
+            <Font name="System Bold" size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="minInput" layoutX="140.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0"/>
+    <Label layoutX="280.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="30.0" prefWidth="110.0" text="Max calority:">
+        <font>
+            <Font name="System Bold" size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="maxInput" layoutX="405.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0"/>
+    <Button fx:id="BackButton" layoutX="279.0" layoutY="510.0" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickBackButton"
+            prefHeight="40.0" prefWidth="86.0" style="-fx-background-radius: 10;" text="Back">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="SetButton" layoutX="545.0" layoutY="125.0" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickSetButton"
+            prefHeight="40.0" prefWidth="86.0" text="Set">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+</AnchorPane>

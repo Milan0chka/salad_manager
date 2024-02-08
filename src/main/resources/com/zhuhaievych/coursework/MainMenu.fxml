@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0"
+            prefWidth="400.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/11"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zhuhaievych.coursework.controllers.MainMenuController">
+    <AnchorPane prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #333333;">
+        <Label layoutX="104.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+               minWidth="-Infinity" prefHeight="50.0" text="Chef's Assistant" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="30.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <Button fx:id="ManageRecipesButton" layoutX="100.0" layoutY="215.0" mnemonicParsing="false"
+            onAction="#onManageRecipesButtonClick" prefHeight="40.0" prefWidth="200.0"
+            style="-fx-background-radius: 10;" text="Manage recipes">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="NewRecipeButton" layoutX="100.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity"
+            mnemonicParsing="false" onAction="#onNewButtonClick" prefHeight="40.0" prefWidth="200.0"
+            style="-fx-background-radius: 10;" text="New recipe">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="ExitButton" layoutX="100.0" layoutY="375.0" mnemonicParsing="false" onAction="#onExitButtonClick"
+            prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;" text="Exit">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="ManageIngredientsButton" layoutX="100.0" layoutY="295.0" mnemonicParsing="false"
+            onAction="#onManageIngredientsButtonClick" prefHeight="40.0" prefWidth="200.0"
+            style="-fx-background-radius: 10;" text="Manage ingredients">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Label layoutX="251.0" layoutY="427.0" text="Made by Milana Zhuhaievych"/>
+</AnchorPane>

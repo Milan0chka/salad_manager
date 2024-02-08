@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0"
+      prefWidth="540.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.zhuhaievych.coursework.controllers.ManageRecipesMenuController">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0"
+                prefWidth="540.0" style="-fx-background-color: #333333;">
+        <Label alignment="CENTER" layoutX="154.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" text="Select your recipe:" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="30.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <GridPane gridLinesVisible="true">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.0" minWidth="260.0" prefWidth="260.0"/>
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="260.0" minWidth="260.0" prefWidth="260.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+        </rowConstraints>
+        <Label text="Name:">
+            <font>
+                <Font name="Calibri" size="18.0"/>
+            </font>
+            <padding>
+                <Insets left="20.0"/>
+            </padding>
+        </Label>
+        <ChoiceBox fx:id="NameInput" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="250.0"
+                   GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets left="5.0"/>
+            </GridPane.margin>
+        </ChoiceBox>
+        <padding>
+            <Insets left="10.0" top="10.0"/>
+        </padding>
+    </GridPane>
+    <HBox prefHeight="100.0" prefWidth="540.0">
+        <Button fx:id="LoadButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#onClickLoadButton" prefHeight="40.0" prefWidth="86.0"
+                style="-fx-background-radius: 10;" text="Load" textAlignment="CENTER">
+            <font>
+                <Font name="Calibri" size="18.0"/>
+            </font>
+            <HBox.margin>
+                <Insets left="47.0" top="10.0"/>
+            </HBox.margin>
+        </Button>
+        <Button fx:id="BackButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#onClickBackButton" prefHeight="40.0" prefWidth="86.0"
+                style="-fx-background-radius: 10;" text="Back" textAlignment="CENTER">
+            <font>
+                <Font size="18.0"/>
+            </font>
+            <HBox.margin>
+                <Insets left="94.0" top="10.0"/>
+            </HBox.margin>
+        </Button>
+        <Button fx:id="DeleteButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickDeleteButton" prefHeight="40.0"
+                prefWidth="86.0" style="-fx-background-radius: 10;" text="Delete" textAlignment="CENTER">
+            <font>
+                <Font name="Calibri" size="18.0"/>
+            </font>
+            <HBox.margin>
+                <Insets left="94.0" top="10.0"/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>

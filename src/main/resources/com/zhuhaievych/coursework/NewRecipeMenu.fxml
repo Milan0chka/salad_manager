@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+            prefWidth="400.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/11"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zhuhaievych.coursework.controllers.NewRecipeMenuController">
+    <AnchorPane prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #333333;">
+        <Label alignment="CENTER" layoutX="128.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" text="New Recipe" textAlignment="CENTER"
+               textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="30.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <Button fx:id="DeleteIngredientButton" layoutX="100.0" layoutY="225.0" mnemonicParsing="false"
+            onAction="#onDeleteButtonClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;"
+            text="Delete ingredient">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="AddIngredientButton" layoutX="100.0" layoutY="170.0" mnemonicParsing="false"
+            onAction="#onAddButtonClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;"
+            text="Add ingredient">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="BackButton" layoutX="100.0" layoutY="445.0" mnemonicParsing="false" onAction="#onBackButtonClick"
+            prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;" text="Back">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="SortIngredientsButton" layoutX="100.0" layoutY="280.0" mnemonicParsing="false"
+            onAction="#onSortButtonClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;"
+            text="Sort ingredients">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="SetCalorityRangeButton" layoutX="100.0" layoutY="335.0" mnemonicParsing="false"
+            onAction="#onSetCalorityButtonClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;"
+            text="Set calority range">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="RecipeInfoButton" layoutX="100.0" layoutY="115.0" mnemonicParsing="false"
+            onAction="#onRecipeInfoButtonClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;"
+            text="Recipe info">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="SaveRecipeButton" layoutX="100.0" layoutY="390.0" mnemonicParsing="false"
+            onAction="#onSaveButtonClick" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;"
+            text="Save recipe">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+</AnchorPane>

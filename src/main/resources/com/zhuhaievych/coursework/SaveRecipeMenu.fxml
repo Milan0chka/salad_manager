@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0"
+            prefWidth="490.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zhuhaievych.coursework.controllers.SaveRecipeMenuController">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0"
+                prefWidth="490.0" style="-fx-background-color: #333333;">
+        <Label alignment="CENTER" layoutX="170.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" text="Save recipe:" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="30.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <Label layoutX="182.0" layoutY="110.0" prefHeight="30.0" text="Existing recipes:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <opaqueInsets>
+            <Insets/>
+        </opaqueInsets>
+    </Label>
+    <ListView fx:id="ExistingRecipesList" layoutX="15.0" layoutY="150.0" prefHeight="200.0" prefWidth="460.0"/>
+    <Label layoutX="15.0" layoutY="365.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="30.0" text="Enter your recipe's name:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Button fx:id="SaveButton" layoutX="106.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickSaveButton"
+            prefHeight="40.0" prefWidth="86.0" style="-fx-background-radius: 10;" text="Save" textAlignment="CENTER">
+        <font>
+            <Font name="Calibri" size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="BackButton" layoutX="298.0" layoutY="420.0" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickBackButton"
+            prefHeight="40.0" prefWidth="86.0" style="-fx-background-radius: 10;" text="Back">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Button>
+    <TextField fx:id="NameInput" layoutX="230.0" layoutY="365.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="245.0"/>
+</AnchorPane>

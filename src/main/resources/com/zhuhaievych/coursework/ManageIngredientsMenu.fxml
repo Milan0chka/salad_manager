@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="335.0"
+      prefWidth="400.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.zhuhaievych.coursework.controllers.ManageIngredientsMenuController">
+
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0"
+                prefWidth="400.0" style="-fx-background-color: #333333;">
+        <Label alignment="CENTER" layoutX="75.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" text="Manage ingredients" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="30.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <Button fx:id="ViewIngredientsButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickViewButton" prefHeight="40.0"
+            prefWidth="200.0" style="-fx-background-radius: 10;" text="View ingredients" textAlignment="CENTER">
+        <font>
+            <Font name="Calibri" size="18.0"/>
+        </font>
+        <VBox.margin>
+            <Insets left="100.0" top="15.0"/>
+        </VBox.margin>
+    </Button>
+    <Button fx:id="AddIngredientButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickAddButton" prefHeight="40.0"
+            prefWidth="200.0" style="-fx-background-radius: 10;" text="Add ingredient" textAlignment="CENTER">
+        <font>
+            <Font name="Calibri" size="18.0"/>
+        </font>
+        <VBox.margin>
+            <Insets left="100.0" top="15.0"/>
+        </VBox.margin>
+    </Button>
+    <Button fx:id="DeleteIngredientButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickDeleteButton" prefHeight="40.0"
+            prefWidth="200.0" style="-fx-background-radius: 10;" text="Delete ingredient" textAlignment="CENTER">
+        <font>
+            <Font name="Calibri" size="18.0"/>
+        </font>
+        <VBox.margin>
+            <Insets left="100.0" top="15.0"/>
+        </VBox.margin>
+    </Button>
+    <Button fx:id="BackButton" mnemonicParsing="false" onAction="#onClickBackButton" prefHeight="40.0" prefWidth="200.0"
+            style="-fx-background-radius: 10;" text="Back">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <VBox.margin>
+            <Insets left="100.0" top="15.0"/>
+        </VBox.margin>
+    </Button>
+</VBox>
