@@ -42,5 +42,5 @@
             <Font size="18.0"/>
         </font>
     </Button>
-    <Label layoutX="251.0" layoutY="427.0" text="Made by Milana Zhuhaievych"/>
+    <Label layoutX="251.0" layoutY="427.0" text="Made by Zhuhaievych M."/>
 </AnchorPane>
